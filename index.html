@@ -3,18 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/images/svg/logo.svg" />
-    <title>React Portfolio by Ryan Balieiro</title>
+    <title>Anuraj</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="A simple react portfolio template." />
     <meta name="author" content="Ryan Balieiro" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Orbitron:400,700|Oxygen:400,700" rel="stylesheet">
   </head>
   <body style="background-color: #111">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      const titles = ["Anuraj", "Anur4j", "4nuR4j", "_NUR@J", "⚠️ H4ck3r ⚠️", "⛧ Anuraj ⛧"];
+      const glitchChars = ['@', '#', '$', '%', '&', '*', '=', '+', '⚠', '⛧'];
+      let titleIndex = 0, charIndex = 0, typing = true;
+
+      function getGlitchedTitle(text) {
+        return [...text].map(char => Math.random() < 0.1 ? glitchChars[Math.floor(Math.random() * glitchChars.length)] : char).join('');
+      }
+
+      function updateTitle() {
+        const current = titles[titleIndex];
+        const partial = current.slice(0, charIndex);
+        document.title = getGlitchedTitle(partial) + (typing ? "_" : "");
+
+        if (typing) {
+          if (charIndex++ > current.length) { typing = false; setTimeout(updateTitle, 700); }
+        } else {
+          if (charIndex-- < 0) { typing = true; titleIndex = (titleIndex + 1) % titles.length; setTimeout(updateTitle, 500); }
+        }
+        setTimeout(updateTitle, 100);
+      }
+
+      updateTitle();
+
+      // Easter Egg: When tab is not active
+      document.addEventListener("visibilitychange", () => {
+        document.title = document.hidden ? "👀 You left the Matrix" : getGlitchedTitle(titles[titleIndex]) + "_";
+      });
+    </script>
   </body>
 </html>
