@@ -19,6 +19,7 @@
       const titles = ["Anuraj", "Anur4j", "4nuR4j", "_NUR@J", "⚠️ H4ck3r ⚠️", "⛧ Anuraj ⛧"];
       const glitchChars = ['@', '#', '$', '%', '&', '*', '=', '+', '⚠', '⛧'];
       let titleIndex = 0, charIndex = 0, typing = true;
+      let timeoutId;
 
       function getGlitchedTitle(text) {
         return [...text].map(char => Math.random() < 0.1 ? glitchChars[Math.floor(Math.random() * glitchChars.length)] : char).join('');
@@ -30,11 +31,20 @@
         document.title = getGlitchedTitle(partial) + (typing ? "_" : "");
 
         if (typing) {
-          if (charIndex++ > current.length) { typing = false; setTimeout(updateTitle, 700); }
+          if (charIndex++ > current.length) { 
+            typing = false; 
+            clearTimeout(timeoutId); 
+            timeoutId = setTimeout(updateTitle, 700); 
+          }
         } else {
-          if (charIndex-- < 0) { typing = true; titleIndex = (titleIndex + 1) % titles.length; setTimeout(updateTitle, 500); }
+          if (charIndex-- < 0) { 
+            typing = true; 
+            titleIndex = (titleIndex + 1) % titles.length; 
+            clearTimeout(timeoutId); 
+            timeoutId = setTimeout(updateTitle, 500); 
+          }
         }
-        setTimeout(updateTitle, 100);
+        timeoutId = setTimeout(updateTitle, 100);
       }
 
       updateTitle();
