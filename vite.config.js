@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/react-portfolio-template/',  // Keep the base path for the project
+  base: 'https://anuraj.online/',  // Keep the base path for the project
   plugins: [react()],
   css: {
     preprocessorOptions: {
