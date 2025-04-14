@@ -46,7 +46,7 @@
 
             "items": [
                 {
-                    "value": "Cupertino – CA",
+                    "value": "India – Chandigarh",
                     "links": [
                         {"href": null}
                     ],
@@ -57,9 +57,9 @@
                     }
                 },
                 {
-                    "value": "mark.choi@dev.com",
+                    "value": "anurajthakur141@gmail.com",
                     "links": [
-                        {"href": "mailto:mark.choi@dev.com"}
+                        {"href": "mailto:anurajthakur141@gmail.com"}
                     ],
                     "icon": {
                         "img": null,
@@ -68,9 +68,9 @@
                     }
                 },
                 {
-                    "value": "@ryanbalieiro",
+                    "value": "@anurajthakur",
                     "links": [
-                        {"href": "https://github.com/ryanbalieiro"}
+                        {"href": "https://github.com/anurajthakur333"}
                     ],
                     "icon": {
                         "img": null,
@@ -100,7 +100,7 @@
                         "faColors": {"bg": null, "fill": null}
                     },
                     "locales": {
-                        "en": {"text": "<p>I’m a PHP developer with <b>over a decade</b> of experience, specializing in backend development with some frontend work as well. I also have hands-on experience with C++, C#, Go, and Python in production environments.</p><p>This diverse background gives me the flexibility to adapt to a wide range of project needs.</p><p>I look forward to collaborating <b>with you!</b>"},
+                        "en": {"text": "<p>I’m a developer with an edge.</p><p>I work with React.js, Bash scripting, interface design, and cybersecurity — crafting fast, intuitive systems with security baked in from the start.</p><p>Got something ambitious in mind? Let’s connect.</p>"},
                         "es": {"text": "<p>Soy un desarrollador de PHP con <b>más de una década</b> de experiencia, especializado en desarrollo backend y con algo de experiencia en frontend. También tengo experiencia práctica en entornos de producción con C++, C#, Go y Python.</p><p>Este variado historial me permite adaptarme a una amplia gama de necesidades de proyectos.</p><p>¡Espero con interés colaborar <b>contigo!</b></p>"},
                         "fr": {"text": "<p>Je suis développeur PHP avec <b>plus d'une décennie</b> d'expérience, spécialisé dans le développement backend avec un peu de travail en frontend également. J'ai aussi de l'expérience en production avec les technologies C++, C#, Go et Python.</p><p>Ce parcours diversifié me permet de m'adapter à une large gamme de besoins de projets.</p><p>Je suis impatient de collaborer <b>avec vous !</b></p>"},
                         "ko": {"text": "<p>저는 백엔드 개발을 전문으로 하고, 프론트엔드 작업도 일부 수행해온 <b>10년 이상의</b> 경력을 가진 PHP 개발자입니다. 또한 C++, C#, Go, Python 스택을 사용한 프로덕션 경험도 있습니다.</p><p>이 다양한 배경 덕분에 프로젝트의 다양한 요구에 유연하게 대처할 수 있습니다.</p><p><b>당신과 협업</b>하기를 기대하고 있습니다!</p>"}
@@ -134,7 +134,7 @@
                     "locales": {
                         "en": {
                             "info": "CEO at <b>SalesForce</b>",
-                            "text": "Working with Mark was a transformative experience. His programming skills and dedication not only improved our project but also inspired the entire team."
+                            "text": "Working with Anuraj was a transformative experience. His programming skills and dedication not only improved our project but also inspired the entire team."
                         },
                         "es": {
                             "info": "CEO en <b>SalesForce</b>",
@@ -152,7 +152,7 @@
                 },
 
                 {
-                    "value": "Lou Natic",
+                    "value": "Amit Chauhan",
                     "links": [
                         {"href": "https://github.com"}
                     ],
@@ -163,8 +163,8 @@
                     },
                     "locales": {
                         "en": {
-                            "info": "Lead Developer at <b>GitHub</b>",
-                            "text": "Having Mark on our team was an invaluable asset. His deep programming insights and mentorship not only elevated our projects but also empowered us to tackle every challenge with confidence and creativity."
+                            "info": "Lead Developer at <b>MindMesh</b>",
+                            "text": "Having Anuraj on our team was an invaluable asset. His deep programming insights and mentorship not only elevated our projects but also empowered us to tackle every challenge with confidence and creativity."
                         },
                         "es": {
                             "info": "Desarrollador Principal en <b>GitHub </b>",
@@ -182,7 +182,7 @@
                 },
 
                 {
-                    "value": "Paige Turner",
+                    "value": "Shruti Bansal",
                     "links": [
                         {"href": null}
                     ],
@@ -194,7 +194,7 @@
                     "locales": {
                         "en": {
                             "info": "Managing Director at <b>Dingga</b>",
-                            "text": "Collaborating with Mark was a game changer for our development process. His expertise and problem-solving abilities were invaluable to our success."
+                            "text": "Collaborating with Anuraj was a game changer for our development process. His expertise and problem-solving abilities were invaluable to our success."
                         },
                         "es": {
                             "info": "Directora General en <b>Dingga</b>",
@@ -212,7 +212,7 @@
                 },
 
                 {
-                    "value": "Chris P. Bacon",
+                    "value": "Pranav Iyer",
                     "links": [
                         {"href": "https://dribbble.com"}
                     ],
@@ -223,8 +223,8 @@
                     },
                     "locales": {
                         "en": {
-                            "info": "Creative Director at <b>Dribbble</b>",
-                            "text": "Mark's attention to detail and his innovative thinking brought a fresh perspective to our design process. He truly elevated our team's work and helped us deliver results beyond expectations."
+                            "info": "Creative Director at <b>BloomBite Media</b>",
+                            "text": "Anuraj's attention to detail and his innovative thinking brought a fresh perspective to our design process. He truly elevated our team's work and helped us deliver results beyond expectations."
                         },
                         "es": {
                             "info": "Directora Creativa en <b>Dribbble</b>",
@@ -260,14 +260,14 @@
                 {
                     "icon": {
                         "img": null,
-                        "fa": "fa-solid fa-guitar",
+                        "fa": "fa-solid fa-gamepad",
                         "faColors": null
                     },
                     "value": null,
                     "locales": {
                         "en": {
-                            "title": "Playing guitar",
-                            "info": "Exploring different genres and improving my skills."
+                            "title": "Playing Games",
+                            "info": "Hooked on esports and always in the loop"
                         },
                         "es": {
                             "title": "Tocar la guitarra",
@@ -293,8 +293,8 @@
                     "value": null,
                     "locales": {
                         "en": {
-                            "title": "AI video editing",
-                            "info": "Learning to use AI tools to enhance my videos."
+                            "title": "AI Tools",
+                            "info": "Exploring AI to automate and streamline tasks."
                         },
                         "es": {
                             "title": "Edición de video con IA",
@@ -348,7 +348,7 @@
                     "locales": {
                         "en": {
                             "title": "Investing",
-                            "info": "Learning the basics of stocks and personal finance."
+                            "info": "Hands-on crypto trader with strategic insight."
                         },
                         "es": {
                             "title": "Invertir",
