@@ -5,7 +5,7 @@ let audioBuffer = null;
 const loadClickSound = async () => {
   try {
     audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    const response = await fetch('public/sounds/click.mp3');
+    const response = await fetch('/sounds/click.mp3');
     const arrayBuffer = await response.arrayBuffer();
     audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
   } catch (error) {
