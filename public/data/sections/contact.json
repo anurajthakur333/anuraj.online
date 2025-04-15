@@ -55,9 +55,9 @@
 
             "items": [
                 {
-                    "value": "+1 (123) 456-7890",
+                    "value": "+91 6280467660",
                     "links": [
-                        {"href": "tel:11234567890"}
+                        {"href": "tel:6280467660"}
                     ],
                     "icon": {
                         "img": null,
@@ -73,9 +73,9 @@
                 },
 
                 {
-                    "value": "mark.choi@email.com",
+                    "value": "anurajthakur141@gmail.com",
                     "links": [
-                        {"href": "mailto:mark.choi@email.com"}
+                        {"href": "mailto:anurajthakur141@gmail.com"}
                     ],
                     "icon": {
                         "img": null,
@@ -89,9 +89,9 @@
                 },
 
                 {
-                    "value": "@markchoi",
+                    "value": "@Anuraj",
                     "links": [
-                        {"href": "https://linkedin.com"}
+                        {"href": "https://linkedin.com/in/anuraj-thakur-675a02233/"}
                     ],
                     "icon": {
                         "img": null,
@@ -104,9 +104,9 @@
                 },
 
                 {
-                    "value": "Anuraj",
+                    "value": "@Anuraj",
                     "links": [
-                        {"href": "https://facebook.com"}
+                        {"href": "https://facebook.com/Anurajthakur"}
                     ],
                     "icon": {
                         "img": null,
@@ -119,9 +119,9 @@
                 },
 
                 {
-                    "value": "@markchoi",
+                    "value": "@Anurajthakur333",
                     "links": [
-                        {"href": "https://instagram.com"}
+                        {"href": "https://instagram.com/anurajthakur333"}
                     ],
                     "icon": {
                         "img": null,
@@ -134,9 +134,9 @@
                 },
 
                 {
-                    "value": "@markchoi",
+                    "value": "@Anuraj",
                     "links": [
-                        {"href": "https://tiktok.com"}
+                        {"href": "https://tiktok.com/anuraj"}
                     ],
                     "icon": {
                         "img": null,
