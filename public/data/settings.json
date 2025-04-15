@@ -16,10 +16,9 @@
         "profilePictureUrl": "images/pictures/avatar.jpg",
 
         "locales": {
-            "en": {"role": "Web Developer"},
-            "es": {"role": "Desarrollador Web"},
-            "fr": {"role": "Développeur Web"},
-            "ko": {"role": "웹 개발자"}
+            "en": {
+                "role": "Web Developer"
+            }
         }
     },
 
@@ -28,10 +27,9 @@
         "available": true,
 
         "locales": {
-            "en": {"message": "Available for freelance!"},
-            "es": {"message": "¡Disponible para freelance!"},
-            "fr": {"message": "Disponible pour freelance !"},
-            "ko": {"message": "프리랜스 가능합니다!"}
+            "en": {
+                "message": "Available for freelance!"
+            }
         }
     },
 
@@ -41,7 +39,6 @@
             "default": true,
             "icon": "fa-solid fa-moon"
         },
-
         {
             "id": "light",
             "default": false,
@@ -55,30 +52,12 @@
             "id": "en",
             "flagUrl": "images/flags/en.png",
             "default": true
-        },
-
-        {
-            "name": "Español",
-            "id": "es",
-            "flagUrl": "images/flags/es.png"
-        },
-
-        {
-            "name": "Français",
-            "id": "fr",
-            "flagUrl": "images/flags/fr.png"
-        },
-
-        {
-            "name": "한국어",
-            "id": "ko",
-            "flagUrl": "images/flags/ko.png"
         }
     ],
 
     "emailjs": {
-        "publicKey": "tzObcsmOwHvPy6Rhp",
-        "serviceId": "service_4h8g7vb",
-        "templateId": "template_seyjkzn"
+        "publicKey": "M0p3epD-H4zpRGAJS",
+        "serviceId": "service_uz4xalh",
+        "templateId": "template_4sz7hvl"
     }
 }
