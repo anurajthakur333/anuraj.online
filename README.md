@@ -1,50 +1,89 @@
-# 🚀 anuraj.online — Dev Portfolio
+# ⚡ anuraj.online — Developer Portfolio
 
-A fast, clean, and responsive portfolio built with **React**, **Bootstrap 5**, and **Vite**. No backend needed — just plug in your info and go!
+A sleek, fast, and responsive portfolio site built with **React**, **Vite**, and **SCSS**. Fully customizable, no backend required — just plug in your content and go.
 
-🌐 [Live Site](https://anuraj.online)
+🌐 [Visit the Site →](https://anuraj.online)
+
+---
 
 ## ✨ Features
-- 📱 Fully responsive (mobile-friendly)
-- 🌙 Dark & light themes
-- 🌍 Multi-language support
-- ⚡ Super fast with Vite
-- 💌 Contact form with EmailJS
 
-## 🛠 Getting Started
+- ✅ Mobile-first, responsive design  
+- 🌗 Light/Dark mode support  
+- 🌍 Multi-language support  
+- ⚡ Powered by Vite for speed  
+- 💌 Contact form with EmailJS (no backend)  
+- 🛠 Easily customizable (content, colors, structure)
 
-1. Clone the repo  
-   `git clone "https://github.com/anurajthakur333/anuraj.online.git"`
+---
 
-2. Install dependencies  
-   `npm install`
+## 🚀 Getting Started
 
-3. Run in dev mode  
-   `npm run dev`
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/anurajthakur333/anuraj.online.git
+   cd anuraj.online
+   ```
 
-4. Build for production  
-   `npm run build`
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## 🧩 Customization
+3. **Start the dev server**
+   ```bash
+   npm run dev
+   ```
 
-### 📄 Content  
-Edit the JSON files in `public/data/`.
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-### 🎨 Colors  
-Tweak SCSS variables in `src/styles/_variables.scss`.
+---
 
-### 🗂 Sections  
-Manage via `public/data/structure.json`.
+## 🎨 Customization
 
-### 🌐 Languages  
-Edit `supportedLanguages` in `settings.json`.
+### 📁 Content  
+Update JSON files in `public/data/` to personalize details, projects, and sections.
 
-### 💌 Contact Form  
-Set your EmailJS credentials in `settings.json`:
+### 🗂️ Section Layout  
+Control order and visibility using `public/data/structure.json`.
 
+### 🌈 Theme & Styles  
+Modify SCSS variables in `src/styles/_variables.scss` for colors, spacing, and more.
+
+### 🌐 Language Settings  
+Edit `supportedLanguages` in `settings.json` to manage multilingual content.
+
+### 📬 Contact Form  
+Set up your EmailJS credentials in `settings.json`:
 ```json
 "emailjs": {
-  "publicKey": "YOUR_KEY",
+  "publicKey": "YOUR_PUBLIC_KEY",
   "serviceId": "YOUR_SERVICE_ID",
   "templateId": "YOUR_TEMPLATE_ID"
 }
+```
+
+---
+
+## 📦 Tech Stack
+
+- React + Vite  
+- SCSS  
+- EmailJS  
+- Bootstrap 5 (light utility)  
+- Netlify (deployment)
+
+---
+
+## 🧠 Inspiration
+
+Designed as a modern, minimal developer portfolio. Clean visuals, lightning-fast loading, and fully editable with JSON & SCSS — your digital card, resume, and portfolio in one.
+
+---
+
+## 📜 License
+
+MIT — free to use, remix, and launch 🚀

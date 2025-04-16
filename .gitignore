@@ -32,3 +32,14 @@ node_modules/.vite/
 .env
 .env.local
 .env.*.local
+
+# npm and yarn logs (optional)
+.npm/
+.yarn/
+
+# Package lock files (if you don't want to track them)
+# package-lock.json
+# yarn.lock
+
+# Coverage folder
+coverage/
