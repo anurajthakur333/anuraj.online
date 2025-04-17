@@ -27,11 +27,11 @@
       "⛧ Anuraj ⛧",
     ];
     const glitchChars = ["@", "#", "$", "%", "&", "*", "=", "+", "⚠", "⛧"];
-    let titleIndex = 0,
-      charIndex = 0,
-      typing = true;
-    let timeoutId;
-
+    let titleIndex = 0;
+    let charIndex = 0;
+    let typing = true;
+    let typingDelay = 120;
+  
     function getGlitchedTitle(text) {
       return [...text]
         .map((char) =>
@@ -41,32 +41,37 @@
         )
         .join("");
     }
-
-    function updateTitle() {
+  
+    function typeNextChar() {
       const current = titles[titleIndex];
       const partial = current.slice(0, charIndex);
-      document.title = getGlitchedTitle(partial) + (typing ? "_" : "");
-
+      const newTitle = getGlitchedTitle(partial) + (typing ? "_" : "");
+      document.title = newTitle;
+  
       if (typing) {
-        if (charIndex++ > current.length) {
+        if (charIndex < current.length) {
+          charIndex++;
+          setTimeout(typeNextChar, typingDelay);
+        } else {
           typing = false;
-          clearTimeout(timeoutId);
-          timeoutId = setTimeout(updateTitle, 700);
+          setTimeout(typeNextChar, 700);
         }
       } else {
-        if (charIndex-- < 0) {
+        if (charIndex > 0) {
+          charIndex--;
+          setTimeout(typeNextChar, typingDelay);
+        } else {
           typing = true;
           titleIndex = (titleIndex + 1) % titles.length;
-          clearTimeout(timeoutId);
-          timeoutId = setTimeout(updateTitle, 500);
+          setTimeout(typeNextChar, 500);
         }
       }
-      timeoutId = setTimeout(updateTitle, 100); // Keep the glitching effect going
     }
-
-    updateTitle();
-
-    // Easter Egg: When tab is not active
+  
+    // Start the animation
+    typeNextChar();
+  
+    // Easter Egg
     document.addEventListener("visibilitychange", () => {
       if (document.hidden) {
         document.title = "👀 You left the Matrix";
@@ -75,6 +80,7 @@
       }
     });
   </script>
+  
 </body>
 
 </html>
