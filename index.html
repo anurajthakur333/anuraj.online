@@ -27,59 +27,60 @@
       "⛧ Anuraj ⛧",
     ];
     const glitchChars = ["@", "#", "$", "%", "&", "*", "=", "+", "⚠", "⛧"];
-    let titleIndex = 0;
-    let charIndex = 0;
-    let typing = true;
-    let typingDelay = 120;
   
-    function getGlitchedTitle(text) {
-      return [...text]
-        .map((char) =>
-          Math.random() < 0.1
-            ? glitchChars[Math.floor(Math.random() * glitchChars.length)]
-            : char
-        )
-        .join("");
+    let titleIndex = 0;
+    let typing = true;
+    let charIndex = 0;
+    let lastTitle = "";
+  
+    function getGlitchedText(text) {
+      return [...text].map((char) => (Math.random() < 0.05 ? glitchChars[Math.floor(Math.random() * glitchChars.length)] : char)).join("");
     }
   
-    function typeNextChar() {
-      const current = titles[titleIndex];
-      const partial = current.slice(0, charIndex);
-      const newTitle = getGlitchedTitle(partial) + (typing ? "_" : "");
-      document.title = newTitle;
+    function updateTitle() {
+      const base = titles[titleIndex];
+      let newTitle;
   
       if (typing) {
-        if (charIndex < current.length) {
-          charIndex++;
-          setTimeout(typeNextChar, typingDelay);
-        } else {
+        charIndex++;
+        if (charIndex >= base.length) {
           typing = false;
-          setTimeout(typeNextChar, 700);
+          setTimeout(updateTitle, 800);
+          return;
         }
       } else {
-        if (charIndex > 0) {
-          charIndex--;
-          setTimeout(typeNextChar, typingDelay);
-        } else {
+        charIndex--;
+        if (charIndex <= 0) {
           typing = true;
           titleIndex = (titleIndex + 1) % titles.length;
-          setTimeout(typeNextChar, 500);
+          setTimeout(updateTitle, 600);
+          return;
         }
       }
+  
+      const partial = base.slice(0, charIndex);
+      newTitle = getGlitchedText(partial) + (typing ? "_" : "");
+  
+      if (newTitle !== lastTitle) {
+        document.title = newTitle;
+        lastTitle = newTitle;
+      }
+  
+      requestAnimationFrame(updateTitle);
     }
   
-    // Start the animation
-    typeNextChar();
+    requestAnimationFrame(updateTitle);
   
-    // Easter Egg
+    // Easter egg
     document.addEventListener("visibilitychange", () => {
       if (document.hidden) {
         document.title = "👀 You left the Matrix";
       } else {
-        document.title = getGlitchedTitle(titles[titleIndex]) + "_";
+        document.title = getGlitchedText(titles[titleIndex]) + "_";
       }
     });
   </script>
+  
   
 </body>
 
